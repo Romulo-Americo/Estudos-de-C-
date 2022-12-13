@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+  int num = 11;
+  printf("%i\n", num);
+
+  float numero2 = 5.6;
+  printf("%f\n", numero2);
+
+  printf(" %f - %i", num, numero2);
+
+
+  return (0);
+}
