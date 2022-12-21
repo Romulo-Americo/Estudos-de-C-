@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int numero1, numero2, soma;
+  scanf("%i%i", &numero1, &numero2);
+  
+  soma = numero1 + numero2;
+  printf("A soma dos numero é: %i", soma);
+
+  
+  return 0;
+}
