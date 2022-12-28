@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int valor1, valor2, resultado;
+  printf("Digite um valor: ");
+  scanf("%i", &valor1);
+  printf("Digite outro valor: ");
+  scanf("%i", &valor2);
+  resultado = valor1 + valor2;
+  printf("O seu resultado é:%i \n", resultado);
+  
+  if (resultado % 2 == 0)
+  {
+   printf("O resultado da sua soma é par");
+  }else
+  {
+    printf("O resultado da sua soma é impar");
+  }
+  return 0;
+}
