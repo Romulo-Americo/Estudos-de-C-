@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+  int jovem, idoso, idade;
+  jovem = 18;
+  idoso = 50;
+  printf("Informe sua idade:\n");
+  scanf("%i", &idade);
+
+  if (idade <= jovem){
+    printf("\nVocê é jovem\n");
+  }else{
+    if (idade >= idoso){
+     printf("Você é idoso"); 
+    }else{
+      if ((idade > jovem) && (idade < idoso)){
+        printf("Você tem meia idade");
+      }
+    } 
+  }
+  
+  return 0;
+}
