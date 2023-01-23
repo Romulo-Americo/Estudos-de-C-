@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-  printf("Tabuada");
-  
-  int i = 1;
-  int numero, resultado;
-  printf("Digite um numero para ver a sua tabuada: ");
-  scanf("%i", &numero);
-  while (i<=11){
-    printf("%i\n", resultado);
-    resultado = i * numero;
-    i += 1 ;
-  }
+int main(){
+    printf("\t\tTabuada\n");
+    int numero_multiplicado, resultado, contador;
+    printf("Digite um numero para ver sua tabuada: ");
+    scanf("%i", &numero_multiplicado);
+    contador = 0;
+    while (contador <= 9)
+    {
+        contador += 1;
+        resultado = contador * numero_multiplicado;
+        printf("%i", contador);
+        printf(" x ");
+        printf("%i", numero_multiplicado);
+        printf(" = ");
+        printf("%i\n", resultado);
+       
+       
+    }
     
-  return 0; 
 }
+
