@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    printf("\t\tFibonacci\n");
+    int t1, t2, t3, numero, contador;
+    printf("Digite quantos termos voce quer visualizar:\n");
+    scanf("%i", &numero);
+    t1 = 0;
+    t2 = 1;
+    printf("%i->%i", t1, t2);
+
+    while (contador <= numero)
+    {
+        t3 = t1 + t2;
+        printf("->%i", t3 );
+        t1 = t2;
+        t2= t3;
+        contador +=1;
+
+       
+    }
+    printf("\nFim");
+    return 0;
+}
+/*Vericar a quantidade de termos que o compilador gera*/
+
