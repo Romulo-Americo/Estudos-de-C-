@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float peso, maior_peso, menor_peso ;
+    int contador = 0;
+    while (contador < 5)
+    {
+        printf("\nInfome o peso da %i ovelha: ", contador);
+        scanf("%f", &peso);
+        contador++;
+    }
+    if (peso == 0)
+    {
+        maior_peso = peso;
+        menor_peso = peso;
+    }
+    else
+    {
+        if (peso > maior_peso)
+        {
+            maior_peso = peso;
+        }
+        if (peso < menor_peso)
+        {
+            menor_peso = peso;
+        }
+    }
+    printf("A ovelha mais pesada tem:%f", maior_peso);
+    return 0;
+}
+//Ajeitar as condições pois o mesmo não mostra o valor solicitado
