@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <locale.h>
 int main()
 {
+    setlocale (LC_ALL, "portuguese");
     int total_de_eleitores, votos_brancos, votos_nulos, votos_validos;
     float porcentagem_de_votosBrancos, porcentagem_de_votosNulos, porcentagem_de_votosValidos;
 
