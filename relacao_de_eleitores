@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int total_de_eleitores, votos_brancos, votos_nulos, votos_validos;
+    float porcentagem_de_votosBrancos, porcentagem_de_votosNulos, porcentagem_de_votosValidos;
+
+    printf("Informe o total de eleitores: ");
+    scanf("%i", &total_de_eleitores);
+    printf("\nInforme o total de votos brancos: ");
+    scanf("%i", &votos_brancos);
+    printf("\nInforme o total de votos nulos: ");
+    scanf("%i", &votos_nulos);
+    printf("\nInforme o total de votos validos: ");
+    scanf("%i", &votos_validos);
+
+    porcentagem_de_votosBrancos = (votos_brancos * 100)/ total_de_eleitores;
+    printf("A porcentagem de votos brancos sao: %.2f %%", porcentagem_de_votosBrancos);
+    
+    porcentagem_de_votosNulos = (votos_nulos * 100)/ total_de_eleitores;
+    printf("\nA porcentagem de votos nulos são: %.2f %%", porcentagem_de_votosNulos);
+
+    porcentagem_de_votosValidos = (votos_validos * 100)/ total_de_eleitores;
+    printf("\nA porcentagem de votos validos sao: %.2f %%", porcentagem_de_votosValidos);
+    return 0;
+}
