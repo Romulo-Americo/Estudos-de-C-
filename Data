@@ -1,0 +1,8 @@
+#include <windows.h>
+
+int main()
+{
+  system ("time /t");
+  system ("safe /t");
+  return 0;
+}
