@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+//#include <locale.h>
+
+int main()
+{
+    //setlocale(LC_ALL, "portuguese");
+    float valor_do_carro, imposto_do_distribuidor, imposto_da_fabrica, totalDistribuidora, totalFabrica, valorTotal;
+
+    printf("Informe o valor do carro:R$");
+    scanf("%f", &valor_do_carro);
+    printf("\nInforme o percentual de imposto da distribuidora:");
+    scanf("%f", &imposto_do_distribuidor);
+    printf("\nInforme o percentual de imposto da fabrica: ");
+    scanf("%f", &imposto_do_distribuidor);
+
+    totalDistribuidora = (valor_do_carro * imposto_do_distribuidor)/ 100;
+    totalFabrica = (valor_do_carro * imposto_da_fabrica)/ 100;
+    valorTotal = valor_do_carro + totalDistribuidora + totalFabrica;
+
+    printf("Com imposto de %.2f %% da distribuiidora mais o imposto de %.2f %% o valor total do carro fica de: R$ %.2f", imposto_do_distribuidor, imposto_da_fabrica, valorTotal);
+    return 0;
+}
+//verificar com o professor
