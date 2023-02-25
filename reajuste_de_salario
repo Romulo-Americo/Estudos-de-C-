@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    float salario_atual, porcetagem_de_reajuste, novo_salario, valor_do_reajuste;
+
+    printf("Informe o salário atual:R$ ");
+    scanf("%f", &salario_atual);
+    printf("\nInforme a porcetagem de reajuste: ");
+    scanf("%f", &porcetagem_de_reajuste);
+    
+
+    valor_do_reajuste = (porcetagem_de_reajuste * salario_atual) / 100;
+    novo_salario = salario_atual + valor_do_reajuste;
+
+    printf("Com o reajuste de %2.f %% o valor do saláro fice de:%2.f R$", porcetagem_de_reajuste, novo_salario);
+    return 0;
+}
