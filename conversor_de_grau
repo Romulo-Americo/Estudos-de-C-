@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int celsius, fahrenheit;
+  printf("Informe o grau em Fahrenheit para ser convertido: ");
+  scanf("%i", &fahrenheit);
+
+  celsius = ((fahrenheit - 32) * 5)/9;
+
+  printf("%i", celsius);
+  
+  return 0;
+}
