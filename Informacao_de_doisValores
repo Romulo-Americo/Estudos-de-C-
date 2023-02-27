@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main()
+{
+   setlocale(LC_ALL, "portuguese");
+   float numero1, numero2, soma, produto, quadrado_do_primeiroValor, soma_dos_quadrados, diferenca, modulo;
+
+    printf("Informe o número: ");
+    scanf("%f", &numero1);
+    printf("\nInforme outro número");
+    scanf("%f", &numero2);
+
+    //A soma dos valores
+    soma = numero1 + numero2;
+    printf("A soma dos valores: %.0f + %.0f = %.0f", numero1, numero2, soma);
+
+    //O produto do primeiro número pelo quadrado do segundo
+    produto = numero1 * (numero2 * numero2);
+    printf("\nO resultado do produto: %.0f", produto);
+
+    //O quadrado do primeiro número
+    quadrado_do_primeiroValor = numero1 * numero1;
+    printf("\nO quadrado do primeiro número: %.0f", quadrado_do_primeiroValor);
+
+    //A raiz quadrada da soma dos quadrados
+    soma_dos_quadrados = (numero1 * numero1) + (numero2 * numero2);
+    printf("\nA soma dos quadrados dos valores: %.0f", soma_dos_quadrados);
+
+    //O seno da diferença do primeiro número pelo segundo número
+    diferenca = numero1 - numero2;
+    printf("\nO seno da diferença dos valores: %.0f", sin(diferenca));
+
+    //O módulo do primeiro valor
+    modulo = fabs(numero1);
+    printf("\nO módulo do primeiro valor é: %.0f", modulo);
+    return 0;
+}
