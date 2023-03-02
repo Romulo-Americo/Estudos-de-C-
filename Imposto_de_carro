@@ -21,4 +21,4 @@ int main()
     printf("Com imposto de %.2f %% da distribuiidora mais o imposto de %.2f %% o valor total do carro fica de: R$ %.2f", imposto_do_distribuidor, imposto_da_fabrica, valorTotal);
     return 0;
 }
-//verificar com o professor
+
