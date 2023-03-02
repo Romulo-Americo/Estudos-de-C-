@@ -34,7 +34,7 @@ int main()
     printf("\nO seno da diferença dos valores: %.0f", sin(diferenca));
 
     //O módulo do primeiro valor
-    modulo = fabs(numero1);
+    modulo = abs(numero1);
     printf("\nO módulo do primeiro valor é: %.0f", modulo);
     return 0;
 }
