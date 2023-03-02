@@ -27,7 +27,7 @@ int main()
 
     //A raiz quadrada da soma dos quadrados
     soma_dos_quadrados = (numero1 * numero1) + (numero2 * numero2);
-    printf("\nA soma dos quadrados dos valores: %.0f", soma_dos_quadrados);
+    printf("\nA soma dos quadrados dos valores: %.0f", sqrt(soma_dos_quadrados));
 
     //O seno da diferença do primeiro número pelo segundo número
     diferenca = numero1 - numero2;
