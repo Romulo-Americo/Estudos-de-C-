@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int ano_atual, ano_nascimento, idade;
+
+    printf("Informe o ano atual: ");
+    scanf("%i", &ano_atual);
+    printf("\nInforme o seu ano de nascimento: ");
+    scanf("%i", &ano_nascimento);
+    idade = ano_atual - ano_nascimento;
+
+    if(idade >= 18){
+        printf("Voce tem: %i \nTem permissao para votar.", idade);
+    }else{
+        printf("VOce tem: %i \nVoce nao tem permissao para votar.", idade);
+    }
+
+    return 0;
+}
