@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    float quantidade_fruta, total_fruta;
+    
+    printf("Informe a quantidade de macas que voce quer comprar: ");
+    scanf("%f", &quantidade_fruta);
+    
+    if(quantidade_fruta >= 12){
+        total_fruta = quantidade_fruta * 1;
+        printf("\nSuas macas sairam de 1.00 R$ \nO total de macas: %.f\nCusto total: %.2f", quantidade_fruta, total_fruta);
+    }else{
+        total_fruta = quantidade_fruta * 1.30;
+        printf("\nSuas macas sairam de 1.30 R$ \nO total de macas: %.f\nCusto total: %.2f", quantidade_fruta, total_fruta);
+    }
+    return 0;
+}
