@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    float nota1, nota2, media;
+    
+    printf("Informe sua primeira nota: ");
+    scanf("%f", &nota1);
+    printf("\nInforme sua segunda nota: ");
+    scanf("%f", &nota2);
+    media = (nota1 + nota2) / 2;
+    
+    if(media >= 6){
+        printf("Voce tirou: %.2f \nAPROVADO", media);
+    }else{
+        printf("Voce tirou: %2.f \nREPROVADO", media);
+    }
+    return 0;
+}
