@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int valor;
+    printf("Digite um valor: ");
+    scanf("%i", &valor);
+    
+    if(valor >= 10){
+        printf("Igual ou maior que 10");
+    }else{
+       printf("Menor que 10");
+    }
+    return 0;
+}
