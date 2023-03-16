@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    int valor1, valor2, valor3;
+    
+    printf("Informe o primeiro valor: ");
+    scanf("%i", &valor1);
+    printf("\nInforme o segundo valor: ");
+    scanf("%i", &valor2);
+    printf("\nInforme o terceiro valor: ");
+    scanf("%i", &valor3);
+    
+    if(valor1 > valor2){
+    	if(valor1> valor3){
+    		printf("%i", valor1);
+		}
+        
+    }if(valor2 > valor1){
+    	if(valor2> valor3){
+    			printf("%i ", valor2);
+		}
+    
+	}if(valor3 > valor1){
+		if(valor3> valor2){
+			printf("%i", valor3);
+		}
+	}if(valor1 == valor2){
+		if(valor2== valor3){
+			printf("Todos os valores sao iguais");
+		}
+	}
+    
+    return 0;
+}
