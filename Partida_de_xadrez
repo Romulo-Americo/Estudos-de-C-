@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int inicio_da_partida, fim_da_partida, toal_de_horas;
+    
+    printf("Informe o horario de inicio: ");
+    scanf("%i", &inicio_da_partida);
+    printf("\nInforme o fim da partida: ");
+    scanf("%i", &fim_da_partida);
+    
+    if(fim_da_partida > inicio_da_partida){
+        toal_de_horas = (fim_da_partida - inicio_da_partida);
+        printf("Voce jogou por %i horas", toal_de_horas);
+    }else{
+        toal_de_horas = 24 - (inicio_da_partida - fim_da_partida);
+        printf("Voce jogou por %i horas", toal_de_horas);
+    }
+
+    return 0;
+}
