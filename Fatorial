@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int valor, contador, fatorial;
+    printf("Informe um numero para ver seu fatorial: ");
+    scanf("%i", &valor);
+    
+    contador = valor;
+    fatorial = 1;
+    
+    do{
+        fatorial *= contador;
+        contador -= 1;
+    }while(contador >0);
+    printf("%i", fatorial);
+    return 0;
+}
