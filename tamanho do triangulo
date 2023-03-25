@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int ladoa, ladob, ladoc;
+    
+    printf("Informe os valores para verificar se as medidas formam um triangulo: ");
+    scanf("%i %i %i", &ladoa, &ladob, &ladoc);
+    
+    int somaAB = ladoa + ladob;
+    int somaAc = ladoa + ladoc;
+    int somaBc = ladob + ladoc;
+    
+    if(ladoa < somaBc){
+        if(ladob< somaAc){
+            if(ladoc < somaAB){
+                printf("\nForma um triangulo.");
+                
+            }else{
+                 printf("\nOs valores nao formam um triangulo");
+            }
+        }else{
+             printf("\nOs valores nao formam um triangulo");
+        }
+    }else{
+        printf("\nOs valores nao formam um triangulo");
+    }
+    return 0;
+}
