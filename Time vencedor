@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int golsPrimeiroTime, golsSegundoTime;
+    char nomePrimeiroTime, nomeSegundoTime;
+    
+    printf("Informe os nomes dos times: ");
+    scanf("%c %c", &nomePrimeiroTime, &nomeSegundoTime);
+    
+    printf("\nInforme os saldo de gols dos times: ");
+    scanf("%i %i", &golsPrimeiroTime, &golsSegundoTime);
+    
+    if(golsPrimeiroTime > golsSegundoTime){
+        printf("\nO time %c ganhou com %i gols!", nomePrimeiroTime, golsPrimeiroTime);
+    }else{
+        if(golsPrimeiroTime == golsSegundoTime){
+            printf("\nEmpate!");
+        }else{
+            printf("O time %c gsnhou com %i gols!", nomeSegundoTime, golsSegundoTime);
+        }
+    }
+
+    return 0;
+}
