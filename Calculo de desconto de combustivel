@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    char tipoCombustiverl;
+    float qtdLitros;
+    
+    printf("Informe o combustivel: \nA-alcool\nG-gasolina\n");
+    scanf("%c", &tipoCombustiverl);
+    
+    printf("\nInforme a quantidade em litros:");
+    scanf("%f", &qtdLitros);
+    
+    float valorDesconto;
+    float valorSemDesconto;
+    
+    if(tipoCombustiverl == 'A'){
+        valorSemDesconto = qtdLitros * 2.90;
+        if(qtdLitros <= 20){
+            valorDesconto = (valorSemDesconto * 3) / 100;
+        }else{
+            valorDesconto = (valorSemDesconto * 5) / 100;
+        }
+    }else{
+        valorSemDesconto = qtdLitros * 3.30;
+        if(qtdLitros <= 20){
+            valorDesconto = (valorSemDesconto * 4) / 100;
+        }else{
+            valorDesconto = (valorSemDesconto * 6) / 100;
+        }
+    }
+    
+    float valoComDesconto  = valorSemDesconto - valorDesconto;
+    
+    printf("\nO combutivel escolhido foi: %c", tipoCombustiverl);
+    printf("\nO valor total com desconto eh: %.2f R$", valoComDesconto);
+    return 0;
+}
