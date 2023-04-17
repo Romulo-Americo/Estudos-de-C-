@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+  int numero1, numero2;
+  printf("Informe primeiro valor: ");
+  scanf("%i", &numero1);
+  printf("\nInforme o seguno valor: ");
+  scanf("%i", &numero2);
+  float resto = numero1 % numero2;
+  if(numero2 == 0){
+    printf("Divisao por 0 nao permitido");
+  }else{
+     if (resto == 0){
+    printf("O valor informado e divisivel por ambos");
+  }else{
+    printf("Ambos os valores nao sao divisiveis por si");
+  }  
+  }
+  return 0;
+}
